@@ -1,0 +1,56 @@
+{
+  "title": "Lang switch v2",
+    "maintainers": [
+    "holovin"
+  ],
+  "rules": [
+    {
+      "description": "Right CMD -> en",
+      "manipulators": [
+        {
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "language": "^en$",
+                "input_source_id": "^org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography$"
+              }
+            }
+          ],
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Right Opt -> ru",
+      "manipulators": [
+        {
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "language": "^ru$",
+                "input_source_id": "^org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography$"
+              }
+            }
+          ],
+          "from": {
+            "key_code": "right_option"
+          },
+          "to": [
+            {
+              "key_code": "right_option"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
