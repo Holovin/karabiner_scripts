@@ -1,0 +1,68 @@
+{
+  "title": "Lang switch caps v2",
+    "maintainers": [
+    "holovin"
+  ],
+  "rules": [
+    {
+      "description": "FN: to ru",
+      "manipulators": [
+        {
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "language": "^en$",
+                "input_source_id": "^org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography$"
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [{ "language": "ru" }]
+            }
+          ],
+          "from": {
+            "apple_vendor_top_case_key_code": "keyboard_fn"
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "FN: to en",
+      "manipulators": [
+        {
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "language": "^ru$",
+                "input_source_id": "^org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography$"
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [{ "language": "en" }]
+            }
+          ],
+          "from": {
+            "apple_vendor_top_case_key_code": "keyboard_fn"
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
