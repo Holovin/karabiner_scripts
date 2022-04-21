@@ -1,0 +1,68 @@
+{
+  "title": "Lang switch cmd+shift (r3)",
+    "maintainers": [
+    "holovin"
+  ],
+  "rules": [
+    {
+      "description": "[LSWL] to ru",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "select_input_source": {
+                "language": "en",
+                "input_source_id": "org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography"
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [{ "language": "ru" }]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "[LSWL] to en",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "select_input_source": {
+                "language": "ru",
+                "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography"
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [{ "language": "en" }]
+            }
+          ],          
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
