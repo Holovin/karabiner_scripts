@@ -1,24 +1,24 @@
 {
-  "title": "Lang switch v2",
+  "title": "Lang switch one key (r3)",
     "maintainers": [
     "holovin"
   ],
   "rules": [
     {
-      "description": "Right CMD -> en",
+      "description": "[LSOK] Right CMD to en",
       "manipulators": [
         {
-          "to_if_alone": [
-            {
-              "select_input_source": {
-                "language": "^en$",
-                "input_source_id": "^org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography$"
-              }
-            }
-          ],
           "from": {
             "key_code": "right_command"
           },
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "language": "en",
+                "input_source_id": "org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography"
+              }
+            }
+          ],
           "to": [
             {
               "key_code": "right_command"
@@ -29,20 +29,20 @@
       ]
     },
     {
-      "description": "Right Opt -> ru",
+      "description": "[LSOK] Right Opt -> ru",
       "manipulators": [
         {
-          "to_if_alone": [
-            {
-              "select_input_source": {
-                "language": "^ru$",
-                "input_source_id": "^org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography$"
-              }
-            }
-          ],
           "from": {
             "key_code": "right_option"
           },
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "language": "ru",
+                "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography"
+              }
+            }
+          ],
           "to": [
             {
               "key_code": "right_option"
