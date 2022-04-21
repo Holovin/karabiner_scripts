@@ -1,5 +1,5 @@
 {
-  "title": "Lang switch cmd+shift (r3)",
+  "title": "Lang switch cmd+shift (r4)",
     "maintainers": [
     "holovin"
   ],
@@ -16,12 +16,20 @@
               ]
             }
           },
-          "to": [
+          "to_if_alone": [
             {
               "select_input_source": {
                 "language": "en",
                 "input_source_id": "org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography"
               }
+            }
+          ],
+          "to": [
+            {
+              "key_code": "left_shift",
+              "modifiers": [
+                "left_command"
+              ]
             }
           ],
           "conditions": [
@@ -46,12 +54,20 @@
               ]
             }
           },
-          "to": [
+          "to_if_alone": [
             {
               "select_input_source": {
                 "language": "ru",
                 "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography"
               }
+            }
+          ],
+          "to": [
+            {
+              "key_code": "left_shift",
+              "modifiers": [
+                "left_command"
+              ]
             }
           ],
           "conditions": [
