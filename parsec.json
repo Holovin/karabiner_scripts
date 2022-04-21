@@ -1,0 +1,60 @@
+{
+    "title": "Parsec (r2)",
+    "rules":
+    [
+        {
+            "description": "[Parsec] Command to Control",
+            "manipulators":
+            [
+                {
+                    "type": "basic",
+                    "from":
+                    {
+                        "key_code": "left_gui"
+                    },
+                    "conditions":
+                    [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers":
+                            [
+                                "tv.parsec.www"
+                            ]
+                        }
+                    ],
+                    "to":
+                    [
+                        {
+                            "repeat": true,
+                            "key_code": "left_control"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from":
+                    {
+                        "key_code": "left_control"
+                    },
+                    "conditions":
+                    [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers":
+                            [
+                                "tv.parsec.www"
+                            ]
+                        }
+                    ],
+                    "to":
+                    [
+                        {
+                            "repeat": true,
+                            "key_code": "left_gui"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
