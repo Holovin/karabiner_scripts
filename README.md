@@ -2,17 +2,16 @@
 These are my personal scripts for [Karabiner-elements](https://karabiner-elements.pqrs.org/) for macOS.
 Complex scripts must be placed in `~/.config/karabiner/assets/complex_modifications/` folder.
 
-## lang_switch_*
-These scripts switch the layout between russian and english keyboard layouts. You need install [typography-layout](https://ilyabirman.net/typography-layout/) before using because the scripts use special id's only for this layouts (but you can change it manually).
 
-#### lang_switch_win.json
-Toggle layouts with: Left CMD (⌘) + Shift.
+#### lang_switch.json
+Toggle layouts with: Left CMD (⌘) + Shift. This script toggle the layout between russian and english keyboard layouts. You need to install [typography-layout](https://ilyabirman.net/typography-layout/) before using. The scripts are using special id's only (see source code). Also see other methods of changing layout in \_old folder.
 
-#### lang_switch_fn.json
-Toggle layouts with: FN button (buttom «globe» button).
+#### mouse_control_keyboard.json
+Control mouse:
+- pointer with right control (⌃) + arrow keys (hold left shift (⇧) to move faster)
+- scroll with right control (⌃) + left option (⌥) + arrow keys.
 
-#### lang_switch_right_opt_command.json
-Set ru layout with right option (⌥), en layout with right command (⌘).
+* You need to enable [Mouse Keys](https://support.apple.com/guide/mac-help/control-the-pointer-using-mouse-keys-mh27469/13.0/mac/13.0) for this.
 
 #### parsec.json
 Remap control button (⌃) to command (⌘) (only when Parsec app in the foreground).
