@@ -13,5 +13,8 @@ Control mouse:
 
 * You need to enable [Mouse Keys](https://support.apple.com/guide/mac-help/control-the-pointer-using-mouse-keys-mh27469/13.0/mac/13.0) for this.
 
+#### caps_control.json
+Remap `caps_lock` to `F13` if pressed alone or to `control` if pressed and not released (for obtaining combinations like caps_lock+c → control+c, but saving «old» behaviour caps_lock → F13 or caps_lock+shift → F13+shift).
+
 #### parsec.json
 Remap control button (⌃) to command (⌘) (only when Parsec app in the foreground).
