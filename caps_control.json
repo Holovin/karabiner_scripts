@@ -1,0 +1,42 @@
+{
+  "title": "CapsControl (r5)",
+    "maintainers": [
+    "holovin"
+  ],
+  "rules": [
+    {
+      "description": "[CC] CapsControl",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+             "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 150,
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+
+          "to_if_alone": [
+            {
+              "key_code": "f13"
+            }
+          ],
+
+          "to_if_held_down": [
+            {
+              "key_code": "left_control",
+              "halt": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
