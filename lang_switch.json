@@ -1,153 +1,117 @@
 {
-  "title": "Lang Switch: Cmd + Shift (r5)",
-    "maintainers": [
-    "holovin"
-  ],
-  "rules": [
-    {
-      "description": "[Lang Switch] Cmd + Shift (r5)",
-      "manipulators": [
+    "description": "[Lang Switch] Cmd + Shift (r5)",
+    "manipulators": [
         {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [{ "language": "ru" }]
-            }
-          ],
-          "from": {
-            "key_code": "left_shift",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to_if_alone": [
-            {
-              "select_input_source": {
-                "language": "en",
-                "input_source_id": "org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography"
-              },
-              "lazy": true
-            }
-          ],
-          "to": [
-            {
-              "key_code": "left_shift",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ]
+            "conditions": [
+                {
+                    "input_sources": [{ "language": "ru" }],
+                    "type": "input_source_if"
+                }
+            ],
+            "from": {
+                "key_code": "left_shift",
+                "modifiers": { "mandatory": ["left_command"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "lazy": true,
+                    "select_input_source": {
+                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography",
+                        "language": "en"
+                    }
+                }
+            ],
+            "type": "basic"
         },
-
         {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [{ "language": "ru" }]
-            }
-          ],
-          "from": {
-            "key_code": "left_command",
-            "modifiers": {
-              "mandatory": [
-                "left_shift"
-              ]
-            }
-          },
-          "to_if_alone": [
-            {
-              "select_input_source": {
-                "language": "en",
-                "input_source_id": "org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography"
-              },
-              "lazy": true
-            }
-          ],
-          "to": [
-            {
-              "key_code": "left_command",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ]
+            "conditions": [
+                {
+                    "input_sources": [{ "language": "ru" }],
+                    "type": "input_source_if"
+                }
+            ],
+            "from": {
+                "key_code": "left_command",
+                "modifiers": { "mandatory": ["left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_command",
+                    "modifiers": ["left_shift"]
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "lazy": true,
+                    "select_input_source": {
+                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography",
+                        "language": "en"
+                    }
+                }
+            ],
+            "type": "basic"
         },
-
-
         {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [{ "language": "en" }]
-            }
-          ],
-          "from": {
-            "key_code": "left_shift",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to_if_alone": [
-            {
-              "select_input_source": {
-                "language": "ru",
-                "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography"
-              },
-              "lazy": true
-            }
-          ],
-          "to": [
-            {
-              "key_code": "left_shift",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ]
+            "conditions": [
+                {
+                    "input_sources": [{ "language": "en" }],
+                    "type": "input_source_if"
+                }
+            ],
+            "from": {
+                "key_code": "left_shift",
+                "modifiers": { "mandatory": ["left_command"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "lazy": true,
+                    "select_input_source": {
+                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography",
+                        "language": "ru"
+                    }
+                }
+            ],
+            "type": "basic"
         },
-
         {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [{ "language": "en" }]
-            }
-          ],
-          "from": {
-            "key_code": "left_command",
-            "modifiers": {
-              "mandatory": [
-                "left_shift"
-              ]
-            }
-          },
-          "to_if_alone": [
-            {
-              "select_input_source": {
-                "language": "ru",
-                "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography"
-              },
-              "lazy": true
-            }
-          ],
-          "to": [
-            {
-              "key_code": "left_command",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ]
+            "conditions": [
+                {
+                    "input_sources": [{ "language": "en" }],
+                    "type": "input_source_if"
+                }
+            ],
+            "from": {
+                "key_code": "left_command",
+                "modifiers": { "mandatory": ["left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_command",
+                    "modifiers": ["left_shift"]
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "lazy": true,
+                    "select_input_source": {
+                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography",
+                        "language": "ru"
+                    }
+                }
+            ],
+            "type": "basic"
         }
-      ]
-    }
-  ]
+    ]
 }
