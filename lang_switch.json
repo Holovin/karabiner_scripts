@@ -1,5 +1,5 @@
 {
-    "description": "[Lang Switch] Cmd + Shift (r5)",
+    "description": "[Lang Switch] Cmd + Shift (r6)",
     "manipulators": [
         {
             "conditions": [
@@ -22,7 +22,7 @@
                 {
                     "lazy": true,
                     "select_input_source": {
-                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography",
+                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.english–ilyabirmantypography",
                         "language": "en"
                     }
                 }
@@ -50,7 +50,7 @@
                 {
                     "lazy": true,
                     "select_input_source": {
-                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.english-ilyabirmantypography",
+                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.english–ilyabirmantypography",
                         "language": "en"
                     }
                 }
@@ -78,7 +78,7 @@
                 {
                     "lazy": true,
                     "select_input_source": {
-                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography",
+                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian–ilyabirmantypography",
                         "language": "ru"
                     }
                 }
@@ -106,7 +106,7 @@
                 {
                     "lazy": true,
                     "select_input_source": {
-                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian-ilyabirmantypography",
+                        "input_source_id": "org.sil.ukelele.keyboardlayout.t.russian–ilyabirmantypography",
                         "language": "ru"
                     }
                 }
